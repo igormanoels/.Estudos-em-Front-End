@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <style>
+        span {
+            color: blue;
+        }
+
+        .menuSuperior {
+            color: brown;
+        }
+
+        #btnEnviar {
+            color: white;
+            background-color: blue;
+        }
+
+        #btnLimpar {
+            color: #00FF00;
+            background-color: red;
+        }
+        
+    </style>
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Estruturando o HTML</title>
+    </head>
+  
+    <body>
+
+        <!-- As div's tem comportamento de display block(faixa de tela horizontal)-->
+        <div class="menuSuperior">
+            <h1>Meu logo da página com título</h1>
+        </div>
+
+
+        <div id="corpoDaPagina">
+            <font color="red" face="Arial" size="22">
+                <p> <b>Lorem</b> ipsum <u>dolor</u> sit amet consectetur adipisicing elit. <strong>In omnis dignissimos</strong>, quod placeat, atque ipsam eius pariatur provident quibusdam distinctio porro nobis ex. </p>
+                <p>10 <sup>3</sup></p>
+                <p>H<sub>2</sub>O</p>
+            </font>
+        </div>
+
+        <div>
+            <h3>Formulário de Cadastro</h3> <br>
+
+            <form action="">
+                <fieldset id="dadosPessoais">
+                    <legend>Dados Pessoais</legend>
+
+                    Nome: <input type="text" name="nome"/> <br>
+                    Data Nascimento: <input type="date"> <br>
+                    Idade: <input type="number" name="age" min="0" max="25" step="2"/> <br>
+                    
+                    <!--Para o radio ser único, o nome deve ser igual -->
+                    Masculino: <input type="radio" name="sexo"/> 
+                    Feminino: <input type="radio" name="sexo"/> <br>
+                </fieldset>
+
+                <fieldset id="dadosContato">
+                    <legend>Contato</legend>
+                    Telefone: <input type="tel"/> <br>
+                    Email: <input type="email"/> <br>
+                    Senha: <input type="password" name="password"/> <br>
+                </fieldset>
+
+                <button id="btnEnviar" type="submit" name="btnEnviar" value="Enviar">Enviar</button>
+                <button id="btnLimpar" type="reset">Limpar</button>    
+            </form>
+        </div>
+
+        <br><br>
+
+        <!--As span são estruturas que não ocupam áreas da página, facilitando a costumização via CSS de apenas uma Letra por exemplo-->
+        <div id="rodape-da-pagina">
+            <P>Lorem ipsum <span>dolor</span> sit ame<span>t</span> consectetur adipisicing elit. Ipsa perferendis eligendi tempora doloremque sint inventore officiis ut magnam quis! Velit alias illum aliquid ipsum similique doloribus nulla cumque dolores vel?</P>
+        </div>
+
+        <!-- Utilizado para colocar videos, conteudos de outras páginas, imagens ou arquivos flash no caso do embed-->
+        <embed src="" type="">
+
+         <!-- Utilizado para incluir videos-->   
+        <video src=""></video>
+
+        <br><br>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Lz8am1HEFmM?si=W0DyDahErsXNUajE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        <br><br>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10345.510528271618!2d-46.64001703701866!3d-23.543638004497577!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5853d96a1441%3A0xebba5cad95ff31bb!2sZona%20Central%20de%20S%C3%A3o%20Paulo%20-%20Rep%C3%BAblica%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001037-010!5e0!3m2!1spt-BR!2sbr!4v1736860786766!5m2!1spt-BR!2sbr" width="1800" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>       
+    
+    </body>
+</html>
