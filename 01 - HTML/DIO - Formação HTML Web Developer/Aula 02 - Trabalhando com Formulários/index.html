@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Criando um Formulário</title>
+    </head>
+    <body>
+        
+        <!-- 
+            Em método, sempre utilizar o post, porque ele diferente do get oculta os dados do formulário 
+            O autocomplete em off impede o navegador de fazer esse processo de compretar automaticamente 
+            -->
+        <form action="enderecoDoServidor.com.br/login" name="cadastro" method="post" 
+            autocomplete="off" onsubmit="alert('Formulário Enviado \nServe para inserir eventos com JavaScript')"> 
+            Formulário de Cadastro <br>
+            
+            Sua foto: <input type="image"> <br>
+            Nome: <input type="text" name="nome"/> <br>
+            Data Nascimento: <input type="date"> <br>
+            Idade: <input type="number" name="age" min="0" max="25" step="2"/> <br>
+            
+            <!--Para o radio ser único, o nome deve ser igual -->
+            Masculino: <input type="radio" name="sexo"/> 
+            Feminino: <input type="radio" name="sexo"/> <br>
+            
+            Telefone: <input type="tel"/> <br>
+            Email: <input type="email"/> <br>
+            Senha: <input type="password" name="password"/> <br>
+            <button type="submit" name="btnEnviar" value="Enviar">Enviar</button> <br>
+
+            <br>
+            <br>
+
+            Volume: <input type="range" value="80"/> <br>
+            Escolha a cor desejada: <input type="color"/> <br>
+            URL: <input type="url"/> <br>
+            Aceita os termos: <input type="checkbox"/> <br>
+
+            <!-- multiple, permite que seja selecionado mais de um arquivo-->
+            Arquivos: <input type="file" multiple/> <br>
+            Buscar: <input type="search"/> <br>
+        </form>    
+
+        <br>
+        <br>
+        
+        <form action="" method="get" onsubmit="Dispara_Evento">    
+            <hr>
+            <h3>Opcionais de sua Pizza</h1> 
+            <p>Escolha o que deseja adcionar</p>
+            <!-- [] Indica que a informação opcional pertence a uma lista, ou seja a soma de seleção [queijo, cebola, azeitona] -->
+            <input type="checkbox" name="opcional[]" value="queijo"/> + queijo <br>
+            <input type="checkbox" name="opcional[]" value="calabresa"/> + calabresa <br>
+            <input type="checkbox" name="opcional[]" value="cebola"/> + cebola <br>
+            <input type="checkbox" name="opcional[]" value="azeitona"/> + azeitona <br>
+            
+            <p>Borda recheada?</p>
+            <input type="radio" name="borda" value="sim"/> Sim <br>
+            <input type="radio" name="borda" value="não"/> Não <br>
+
+            <p>Bebida</p>
+            <input type="radio" name="bebida" value="refrigerante"/> Refrigerante <br>
+            <input type="radio" name="bebida" value="suco"/> Suco <br>
+            <input type="radio" name="bebida" value="agua"/> Água <br>
+
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpar campos do formulário</button> <br>
+
+        </form>
+        <hr>
+
+        <br>
+        <br>
+
+        <button type="button" onclick="alert('clicou')">Mouse evento com clique</button> <br>
+        <button type="button" onmouseenter="alert('mouse dentro')">Mouse evento ao entrar</button> <br>
+
+        <br>
+        <br>
+
+        Cargo: 
+        <select name="role" id="">
+            <option value="null" selected>Selecione um cargo</option>
+            <option value="ADM">Administrador</option>
+            <option value="Contador">Contador</option>
+            <option value="ADS">ADS</option>
+            <option value="RH">RH</option>
+            <option value="Operador">Operador</option>
+        </select>
+
+        <br>
+        <br>
+
+        Deixe aqui sua mensagem: <br>
+        <textarea name="mensagem" rows="6" cols="50"></textarea>
+
+    </body>
+</html>

@@ -14,5 +14,5 @@
 - ### *4 Estudos em Angular* 
     - DIO - Formação Angular Developer
 
-- ### *React Native*
+- ### *5 React Native*
     - Formação React Native Developer
