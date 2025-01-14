@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SomaValores</title>
+</head>
+<body>
+    <h1>Somar valores</h1>
+    <input type="number" name="entrada1" id="entrada1">
+    <input type="number" name="entrada2" id="entrada2">
+    <input type="button" value="Somar" onclick="somar()">
+    <div class="Resultado"> Seu resultado aqui!!! </div>
+    
+    <script>
+        function somar() {
+            var entrada1 = window.document.querySelector('input#entrada1') //valor entra como string
+            var entrada2 = window.document.getElementById('entrada2') //valor entra como string
+            var Resultado = window.document.querySelector('div.Resultado')
+            var valor1 = Number(entrada1.value) //valor convertido de string para number
+            var valor2 = Number(entrada2.value) //valor convertido de string para number
+            var valordasoma = valor1 + valor2
+            Resultado.innerHTML = `O Resultado da soma entre ${valor1} e ${valor2} é = <strong>${valordasoma}<strong>` // esse simbolo é a crase `
+
+        }
+
+    </script>
+</body>
+</html>

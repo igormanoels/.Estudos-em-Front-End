@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style> 
+        Body {
+            background-color: azure; /* Comentário em CSS */
+            font-size: 18px;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Olá Mundo!!!</h1>  <!-- Comentário em html --> 
+    <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure perferendis explicabo distinctio ex reiciendis doloremque dolorum ducimus soluta dolorem at iusto, sunt veritatis illo dolor. Autem nihil necessitatibus mollitia blanditiis?</p>
+
+    <script>
+        var Num1 = Number.parseInt(window.prompt('Informe o primeiro valor ')) // Toda entrada de dados via prompt é interpretado como uma string
+        var Num2 = Number.parseInt(window.prompt('Informe o segundo valor')) 
+        // O comando Number.parseInt (inteiro) ou parseFloat (real) servem para converter um valor de entrada de string para Numero
+        // Case use apenas o Number o JS se vira a depender da entrada para interpretar se é inteiro ou real
+        var somavalores = Num1 + Num2
+        window.alert(`A Soma dos valores ${Num1} e ${Num2} é = ` + somavalores) // usar a crase para ${Num2}
+    </script>
+
+</body>
+</html>

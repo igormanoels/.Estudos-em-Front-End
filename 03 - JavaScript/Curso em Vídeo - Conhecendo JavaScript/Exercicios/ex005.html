@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            background-color: rgb(199, 235, 117);
+            color: rgb(0, 0, 0);
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <P> Primeiro </P>
+    <p> Segundo </p>
+    <div id="BlocoA">
+        Eu Estou estudando JS
+    </div>
+
+    <div class="BlocoB">
+        Visitando o estudo dos elementos
+    </div>
+
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[0] // quando a mais de uma tag, vc usa [n] para informar qual a posição dela
+        window.document.write('Editando o primeiro parágrafo ' + p1.innerText)
+        
+        /* var div1 = window.document.getElementById('BlocoA')
+        div1.style.color = 'Blue'
+        */
+
+        var div1 = window.document.querySelector('div#BlocoA') // usando um id
+        div1.style.color = 'Blue'
+
+        var div2 = window.document.querySelector('div.BlocoB') // usando uma class
+        div2.style.color = "red"
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VerificarNacionalidade</title>
+    
+    <style>
+        h1{
+            text-align: center;
+        }
+        
+    </style>
+
+</head>
+<body>
+    <h1>Descubra sua Nacionalidade!</h1>
+    Em qual país você nasceu?
+    <input type="text" name="nacionalidade" id="nacionalidade">
+    <input type="button" value="Verificar" title="Verificar" onclick="VerifNaction()">
+    <div id="Resultado"></div>
+    
+    <script>
+        function VerifNaction(){
+            var nation = window.document.getElementById('nacionalidade')
+            var pais = String(nation.value) 
+            var res = window.document.getElementById('Resultado')
+            
+            if (pais == 'Brasil'){
+                res.innerText = `Você nasceu no ${pais}, portanto é Brasileiro` 
+            }else{
+                res.innerText = `Você nasceu no ${pais}, portanto é Estrangeiro`
+            }
+        }
+    </script>
+
+</body>
+</html>

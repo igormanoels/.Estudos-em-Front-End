@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos de Mouse</title>
+
+    <style> 
+        div{
+            background-color: aquamarine;
+            font-style: italic;
+            font-size: 25px;
+            text-align: center;
+            padding-left: 50px;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="Area1" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+        Interagir...
+    </div>
+
+    <script>
+
+        /*
+        var mouse1 = window.document.querySelector('div#Area1') 
+        variável globall e retira ela dos módulos e move o evento do HTML para o JS, 
+          conforme a seguir.
+        
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair) 
+        */ 
+
+        function entrar() {
+            var mouse1 = window.document.querySelector('div#Area1')
+            mouse1.innerText = 'Entrou!'
+            mouse1.style.color = 'green'
+        }
+
+        function sair() {
+            var mouse3 = window.document.querySelector('div#Area1')
+            mouse3.innerText = 'Saiu!'
+            mouse3.style.color = 'red'
+        }
+
+        function clicar() {
+            var mouse2 = window.document.getElementById('Area1')
+            mouse2.innerText = 'Clicou!'
+            mouse2.style.color = 'blue'
+        }
+
+    </script>
+
+</body>
+</html>

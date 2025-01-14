@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Eventos DOM - Eventos de Mouse</title>
+        <style>
+            div#area {
+                background-color: brown;
+                font-size: 40px;
+                text-align: center;
+                line-height: 150px;
+                color: white;
+                width: 200px;
+                height: 150px;
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <div id="area" >  <!--  Outra forma é incluir esse comando dentro do HTML/body/div   -> onclick="Clicar()" onmouseenter="Entrou()" onmouseout="Saiu()" -->
+            Intereja...
+        </div>
+
+        <script>
+            var area = window.document.getElementById('area')
+            area.addEventListener('click', Clicar)                  //removento as 3 listas de evento
+            area.addEventListener('mouseenter', Entrou)
+            area.addEventListener('mouseout', Saiu)    
+
+            function Clicar(){
+                area.innerText = "Clicou"
+                area.style.backgroundColor = "blue"
+                area.style.color = "green"
+            }
+
+            function Entrou(){
+                area.innerText = "Entrou"
+                area.style.backgroundColor = "green"
+            } 
+
+            function Saiu(){
+                area.innerText = "Saiu"
+                area.style.backgroundColor = "red"
+                area.style.color = "white"
+            }
+
+        </script>
+
+    </body>
+</html>
+

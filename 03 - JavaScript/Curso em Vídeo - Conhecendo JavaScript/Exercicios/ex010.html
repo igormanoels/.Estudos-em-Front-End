@@ -1,0 +1,50 @@
+ <!DOCTYPE html>
+ <html lang="pt-BR">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudando Condições</title>
+    
+    <style>
+        .caixadevelocidade{
+            background-color: aquamarine;
+            font-style: normal;
+            font-size: 25px;
+            text-align: center;
+            width: 50%;
+            height: 150px;
+            align-items: center;
+        }
+    </style>
+
+ </head>
+ <body>
+    <div class="caixadevelocidade">
+        <div class="Vel"> Velocidade 
+            <input type="Number" id="entrada">
+            <input type="button" id="Verificar" value="Verificar" onclick="VerifVel()">
+        </div>
+
+        <div id="res">
+            Fui multado?
+        </div> 
+    </div>    
+
+    <script>
+        function VerifVel(){
+            var veloc = window.document.getElementById('entrada')
+            var multa = Number(veloc.value)
+            var res = window.document.getElementById('res')
+
+            if(multa <= 50){
+                res.innerHTML = `Você não foi multado ao trafegar à <strong>${multa}km/h</strong>`
+            }else{
+                res.innerHTML = `Infelizmente você será multado ao trafegar à <strong> ${multa}km/h</strong>`
+                res.innerHTML += `<p> Por favor, respeite o limite de velocidade!</p>`
+            }
+
+        }
+    </script>
+    
+ </body>
+ </html>

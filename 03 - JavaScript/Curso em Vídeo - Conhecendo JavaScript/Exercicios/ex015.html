@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Verificador de Idade</title>
+        <link rel="stylesheet" href="ex015-style.css">
+    </head>
+    
+    <body>
+        <header> 
+            <h1>Verificador de Idade</h1>
+        </header>
+        
+        <section>
+            <fieldset>
+                <legend> Ano de Nascimento </legend>
+                <div id="msg">
+                    <input type="Number" id="idade">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend> Sexo </legend>
+
+                <div id="sexo">
+                    <input type="radio" id="masc" name="sexo" value="masc" />
+                    <label for="masc">Masculino</label>
+                
+                    <input type="radio" id="fem" name="sexo" value="fem"/>
+                    <label for="fem">Feminino</label>
+                </div>
+            </fieldset>
+
+            <br>
+
+            <div id="verificar">
+                <input type="submit" value="Verificar" id="verifIdade" onclick="verificar()">
+
+            </div>
+
+            <br>
+
+            <div id="resultado">
+                Seu resultado aparecerá aqui...
+            </div>
+
+            <br>
+
+            <div class="foto">
+                <img class="imagens" src="/Aulas/ex015-imgs/imagem001.png" alt="Foto da 001-madrugada">
+            </div> 
+
+        </section>
+        
+        <footer> 
+            <p> Ex. 015 - Meu site sobre Idade</p>
+            </footer>
+        
+            <script src="ex015.js"></script>
+    </body>
+</html>
