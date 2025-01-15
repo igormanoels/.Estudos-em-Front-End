@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <style>
+        table {
+            border: 20px;
+            border-color: blue;
+            border-radius: 20px;
+            text-align: center;
+        }
+        table thead td {
+            background-color: aquamarine;
+        }
+
+        table tfoot td {
+            background-color: aquamarine;
+        }
+
+        table tr:nth-child(even) {
+            background-color: brown;
+            color: azure;
+        }
+        table tr:hover td {
+            background-color: chartreuse;
+            color: black;
+        }
+        #cabecalho {
+            font-size: 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font: bold;
+        }
+    </style>
+
+    <body>
+        <!-- 
+            cellspacing - espaço da borda
+            cellpadding - espaçamento interno
+            summary - descrição da tabela
+            th - cria um cabeçalho
+            tr - cria uma linha
+            td - cria uma coluna
+            thead - cabeçalho
+            tbody - corpo da tabela
+            tfoot - rodapé            
+        -->
+        <table summary="Descrição da tabela com cursos em cima." border="1" width="300" align="center" cellspacing="10" cellpadding="5">
+            <caption>Idade dos alunos do cursos.</caption>
+            <thead>
+                <tr id="cabecalho">
+                    <th title="Nome completo dos usuários">Nome</th>
+                    <th>Idade</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>João da Silva Carvalho</td>
+                    <td>21</td>
+                </tr>
+                <tr>
+                    <td>Maria da Silva Carvalho</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>Gizele da Silva Carvalho</td>
+                    <td>39</td>
+                </tr>
+                <tr>
+                    <td>Flavio da Silva Carvalho</td>
+                    <td>37</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td>Total</td>
+                    <td>4</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <!--Exemplo de Tabela utilizando o colspan, que faz a ocupação de duas colunas -->
+        <table>
+            <tr>
+                <th>Month</th>
+                <th>Savings</th>
+            </tr>
+            <tr>
+                <td>January</td>
+                <td>$100</td>
+            </tr>
+            <tr>
+                <td>February</td>
+                <td>$80</td>
+            </tr>
+            <tr>
+                <td colspan="2">Sum: $180</td>
+            </tr>
+        </table>
+
+    </body>
+</html>
