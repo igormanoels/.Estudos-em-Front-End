@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        Usando EMMET para criar conteúdos rapidamente 
+        header>nav>li>lo*3>a
+
+        
+        <!--Cabeçalho - Pode ficar aqui-->
+        <header>
+            <!--Menu de navegação - Pode ficar aqui-->
+            <nav></nav>
+
+            <!--Usa o navegador para abrir direto no telefone, para o android acessar a agenda-->
+            <a href="tel:+551193302121">Telefone</a>
+        </header>
+        
+        
+        <!--Corpo, só pode haver uma tag main no html-->
+        <main>
+            <!--Cabeçalho - Pode ficar aqui-->
+            <header></header>
+            
+            <!--Seção com informações - Pode ficar aqui - Não há limites de uso-->
+            <section>
+                <!--Cabeçalho - Pode ficar aqui-->
+                <header></header>
+                
+                <!--Área de figuras - Dá contexto ao uso da imagem/vídeo/gráfico/tabela, esse é o uso correto para deixar o conteúdo mais semantico-->
+                <figure>
+                    <figcaption>Descrição da imagem aqui</figcaption>
+                    <img src="suaImagemAqui.jpg" alt="">
+                </figure>
+
+                <picture>
+                    <source srcset="quando chegar nesse tamanho, ele troca para essa imagem com outro tamanho" media="min-width: 600px">
+                    <img src="colocar a imagem no tamanho padrão" alt="">
+                </picture>
+
+                <!--Rodapé  - Pode ficar aqui-->
+                <footer></footer>
+            </section>
+
+            <section></section>
+            <section></section>
+            <section></section>
+
+            <!--Artigo - Deve estar relacionado com o conteúdo da página e podem estar também relacionados entre si-->
+            <article> Qual a importancia de estar no peso certo?
+                <p><time pubdate>15/01/2025 as 19:00hs</time></p>
+                <article>É importante para....</article>
+                <blockquote cite="http://www.w3c.com">Citação longa de outra página, e com recuo</blockquote>
+                <q cite="também pode ser utilizado para referenciar sites externos">Citação curta, e sem recuo</q>
+            </article>
+            
+            <!--Informações sem relação com o conteúdo da página - Pode ficar aqui-->
+            <aside></aside>
+
+            <!--Rodapé  - Pode ficar aqui-->
+            <footer>
+                <!--Tag para destacar o endereço semanticamente-->
+                <address>Rua XYZ, 43</address>
+            </footer>
+        </main>
+
+        <!--Rodapé  - Pode ficar aqui-->
+        <footer>
+            <!--Menu de navegação - Pode ficar aqui-->
+            <nav></nav>
+        </footer>
+
+    </body>
+</html>
