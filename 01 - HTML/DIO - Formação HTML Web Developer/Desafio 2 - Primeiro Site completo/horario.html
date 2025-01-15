@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <style>
+        #menu {
+            text-align: center;
+        }
+
+        #rodape{
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+        }
+
+        #tabela-horario {
+            text-align: center;
+            border: 1px solid black;
+        }
+
+        thead {
+            color: white;
+            background-color: black;
+        }
+
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>clínica Nossa Saúde</title>
+    </head>
+    
+    <body>
+        <div id="cabecalho">
+            <table>
+                <tr>
+                    <td>
+                        <img src="img/logo.png" width="100" title="Logo" alt="Logo"/>
+                    </td>
+                    <td>
+                        <h1 id="titulo">Clínica nossa saúde</h1>
+                    </td>
+                </tr>
+            </table>
+        </div>  
+
+        <div id="menu">
+            <ul>
+                <lo><a href="index.html">Página Principal</a></lo>
+                <lo><a href="sobre.html">Sobre a clínica</a></lo>
+                <lo><a href="horario.html">Horário de Atendimento</a></lo>
+                <lo><a href="contato.html">Contato</a></lo>
+            </ul>
+        </div>
+
+        <div id="conteudo">
+            <br>
+            <br>
+            <table id="tabela-horario" >
+                <caption>Tabela de Horários</caption>
+                <thead>
+                    <th>Serviço</th>
+                    <th>Segunda a Sexta</th>
+                    <th>Sábado</th>
+                    <th>Feriados</th>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Clinica Geral</td>
+                        <td>08h-19h</td>
+                        <td>08h-14h</td>
+                        <td>08h-14h</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Psicologia</td>
+                        <td>08h-19h</td>
+                        <td>08h-14h</td>
+                        <td>08h-14h</td>
+                    </tr>
+
+                    <tr>
+                        <td>Pediatria</td>
+                        <td>08h-19h</td>
+                        <td>08h-18h</td>
+                        <td>-</td>
+                    </tr>
+
+                    <tr>
+                        <td>Oftalmologia</td>
+                        <td>08h-19h</td>
+                        <td>08h-18h</td>
+                        <td>-</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div id="rodape"> 
+            Todos os direitos reservados a <strong>Clinica de amor a saúde</strong>
+        </div>
+    </body>
+
+</html>
