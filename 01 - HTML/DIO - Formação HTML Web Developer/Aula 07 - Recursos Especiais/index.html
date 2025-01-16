@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Recuysos Especiais</title>
+    </head>
+
+    <style>
+        kbd {
+            color: blueviolet;
+            border: 1px;
+        }
+
+        code {
+            background-color: aquamarine;
+        }
+
+        canvas{
+            background-color: brown;
+        }
+
+    </style>
+
+    <body>
+        
+        <!-- Opção similar ao combobox-->
+        <select name="opcoes" id="">
+            <option value="Opcao1">Opção 1</option>
+            <option value="Opcao2">Opção 2</option>
+            <option value="Opcao3">Opção 3</option>
+            <option value="Opcao4">Opção 4</option>
+            <option value="Opcao5">Opção 5</option>
+        </select>
+
+        <input type="search" name="busca" list="valores" />
+        <datalist id="valores">
+            <option value="Opcao1 que será coletada pelo JS">Descrição do valor</option>
+            <option value="Opcao2"></option>
+            <option value="Opcao3"></option>
+            <option value="Opcao4"></option>
+            <option value="Opcao5"></option>
+        </datalist>
+
+
+        <br><br>
+
+
+        <!--Comando e códigos fontes no navegador-->
+        <!--kbd serve para mostar instruções de teclado-->
+        <p>Para copiar esse texto, precione <kbd>ctrl</kbd>+<kbd>c</kbd></p>
+
+        <!-- Comando utilizado para incluir códigos no meio do html sem que ele seja interpretado pelo navegador-->
+        <pre>
+            <code>
+                kbd {
+                    color: blueviolet;
+                    border: 1px;
+                }
+            </code>
+        </pre>
+
+
+        <br><br>
+
+        <!--Detalhes - Por default ele trás uma frase 'SAIBA MAIS', utilizado para omitir textos e deixar para que o usuário visualize a sua vontade-->
+        <details>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error incidunt, quibusdam esse necessitatibus eaque quis aspernatur quia cumque dolor voluptatum molestiae consequatur sapiente perspiciatis, blanditiis aliquid odit aperiam rerum alias?</p>
+        </details>
+
+        <details>
+            <summary>Clique aqui para saber mais!!!</summary>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error incidunt, quibusdam esse necessitatibus eaque quis aspernatur quia cumque dolor voluptatum molestiae consequatur sapiente perspiciatis, blanditiis aliquid odit aperiam rerum alias?</p>
+        </details>
+
+
+        <br><br>
+
+        <!--Tag onde se manipula gráficos, sendo possivel manupular interações com mouse e teclado junto com animações-->
+        <canvas id="" width="400" height="200">
+
+        </canvas>
+
+
+        <br><br>
+
+        <!--
+            Funciona como um medidor, como por exemplo informar o valor que existe ocupado em seu hd
+            Outra possivel solução é para definiar valores máximo como a de uma temperatura, e ao chegar proxima do maximo via
+            css você fazer alteração para que ele fique mais vermelhor ou mais azul quando mais proximo da menor temperatura
+            -->
+        <p>temperatura</p>
+        <meter value="" max="100" min="-100" value="-23"></meter>
+
+        <!-- Barras de ação/ carregamento-->
+        <p>Barra de carregamento</p>
+        <progress id="progresso" max="100" min="0" value="0"> </progress>
+        
+        <br>
+
+        <!-- Esse trecho é apenas JS, manipulando o conteúdo de progress-->
+        <script>
+            var progress = document.getElementById('progresso');
+            const interval = setInterval(() => {
+                if (progress.value >= 100) {
+                    alert('Carregamento concluído.')
+                    clearInterval(interval);
+                }
+                progress.value += 10;
+            }, 1000)
+        </script>
+
+
+
+
+    </body>
+</html>

@@ -50,8 +50,7 @@
             <form action="">
                 <fieldset id="dadosPessoais">
                     <legend>Dados Pessoais</legend>
-
-                    Nome: <input type="text" name="nome"/> <br>
+                    Nome: <input type="text" name="nome" minlength="3"/> <br>
                     Data Nascimento: <input type="date"> <br>
                     Idade: <input type="number" name="age" min="0" max="25" step="2"/> <br>
                     
@@ -62,9 +61,15 @@
 
                 <fieldset id="dadosContato">
                     <legend>Contato</legend>
-                    Telefone: <input type="tel"/> <br>
+                    Telefone: <input type="tel" minlength="11"/> <br>
                     Email: <input type="email"/> <br>
                     Senha: <input type="password" name="password"/> <br>
+                </fieldset>
+
+                <!--o atributo maxlength e minlength delimitam o tamanho do campo-->
+                <fieldset>
+                    <legend>Observações</legend>
+                    <textarea name="observacao" id="observacao" cols="20" rows="20" maxlength="2000" minlength="200"></textarea>
                 </fieldset>
 
                 <button id="btnEnviar" type="submit" name="btnEnviar" value="Enviar">Enviar</button>

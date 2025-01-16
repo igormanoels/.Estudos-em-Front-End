@@ -16,7 +16,12 @@
             Formulário de Cadastro <br>
             
             Sua foto: <input type="image"> <br>
-            Nome: <input type="text" name="nome"/> <br>
+            <!--
+                Autofocus faz com que ao abrir o formulário, o campo já seja chamado com o cursor
+                Required torna o campo obrigatório
+                Disable torna o campo inativo
+                -->
+            Nome: <input type="text" name="nome" autofocus required/> <br>
             Data Nascimento: <input type="date"> <br>
             Idade: <input type="number" name="age" min="0" max="25" step="2"/> <br>
             
