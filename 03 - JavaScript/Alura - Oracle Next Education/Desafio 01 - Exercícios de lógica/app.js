@@ -117,8 +117,8 @@ while(contador1 <= numeroContagem2){
 console.log("Seja bem vindo a minha lista de exercícios");
 
 //Crie uma variável chamada "nome" e atribua a ela o seu nome. Em seguida, utilize o console.log para exibir a mensagem "Olá, [seu nome]!" no console do navegador.
-let nome = "Igor Manoel";
-console.log(`Olá, ${nome}!`);
+let meuNome = "Igor Manoel";
+console.log(`Olá, ${meuNome}!`);
 
 //Crie uma variável chamada "nome" e atribua a ela o seu nome. Em seguida, utilize o alert para exibir a mensagem "Olá, [seu nome]!" .
 alert(`Olá, ${nome}!`);
@@ -139,7 +139,7 @@ console.log(`A soma de ${valor1} e ${valor2} é igual a ${resultado}`);
 console.log(`A diferença entre ${valor1} e ${valor2} é igual a ${resultado}`);
 
 //Peça ao usuário para inserir sua idade com prompt. Com base na idade inserida, utilize um if para verificar se a pessoa é maior ou menor de idade, exibindo uma mensagem apropriada no console.
-let idade = prompt("Informe sua idade: ");
+let minhaIdade = prompt("Informe sua idade: ");
 if (idade >= 18) {
     console.log("Você é maior de idade");
 } else {
@@ -147,15 +147,15 @@ if (idade >= 18) {
 }
 
 //Crie uma variável "numero" e peça um valor com prompt verifique se é positivo, negativo ou zero. Use if-else para imprimir a respectiva mensagem.
-let numero = prompt("Informe um número a sua escolha: ");
-if(numero == 0) {
-    console.log("O número informado é zero.");
+let meuNumero = prompt("Informe um número a sua escolha: ");
+if (meuNumero == 0) {
+  console.log("O número informado é zero.");
 } else {
-    if (numero < 0) {
-        console.log("O número informado é negativo.");
-    } else {
-        console.log("O número informado é positivo.");
-    }
+  if (meuNumero < 0) {
+    console.log("O número informado é negativo.");
+  } else {
+    console.log("O número informado é positivo.");
+  }
 }
 
 //Use um loop while para imprimir os números de 1 a 10 no console.
