@@ -1,18 +1,20 @@
 # .Estudos-em-Front-End
 
-
-- ### *1 Estudos em HTML5*  
+- ### *Estudos em HTML5*
+    - Alura - Oracle Next Education - Formação ONE 
     - DIO - Formação HTML Web Developer
 
-- ### *2 Estudos em CSS3*  
+- ### *Estudos em CSS3*
+    - Alura - Oracle Next Education - Formação ONE
     - DIO - Formação CSS Web Developer
 
-- ### *3 Estudos em JavaScript*   
+- ### *Estudos em JavaScript*
+    - Alura - Oracle Next Education - Formação ONE
     - DIO - Formação JavaScript Developer
-    - Curso em Vídeo
+    - Curso em Vídeo (Canal Youtube - Gustavo Guanabara)
 
-- ### *4 Estudos em Angular* 
+- ### *Estudos em Angular* 
     - DIO - Formação Angular Developer
 
-- ### *5 React Native*
-    - Formação React Native Developer
+- ### *Estudos em React Native*
+    - DIO - Formação React Native Developer
