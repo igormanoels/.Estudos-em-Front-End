@@ -1,7 +1,8 @@
 # .Estudos-em-Front-End
 
 - ### *Estudos em HTML5*
-    - Alura - Oracle Next Education - Formação ONE 
+    - Alura - Oracle Next Education - Formação ONE
+        - [Desenvolvendo um Portfólio](https://github.com/igormanoels/.Estudos-em-Front-End/tree/main/01%20-%20HTML/Alura%20-%20Oracle%20Next%20Education/Aula%2002%20-%20Usando%20um%20modelo%20do%20Figma)
     - DIO - Formação HTML Web Developer
 
 - ### *Estudos em CSS3*
