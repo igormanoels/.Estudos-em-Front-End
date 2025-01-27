@@ -1,12 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+} /*Reset CSS - Utilizado para remover as margens aplicadas nativamente nos elementos pelos navegadores*/
+
+
 body {
-    background-color: black;
-    color: white;
+    height: 100vh;/*Garante que a página será ocupada em 100% do viewport height*/
+    
+    box-sizing: border-box;
+    /*Garante que o conteúdo permanecerá dentro do corpo da página, encolhendo o conteúdo e se adaptando a outros tipos de tela*/
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+
+    background-color: #000000;
+    color: #F6F6F6;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+.container {
+    display: flex; /*Define que o layout dos elementos será flex*/
+    align-items: center; /*Centraliza elementos, relacionando entre si*/
+    justify-content: space-between; /*Espaço entre elementos*/
+    gap: 60px;
+}
+
+.container__bloco1 {
+    width: 820px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.container__bloco1__titulo {
+    color: rgb(253, 194, 0);
+    font-size: 36px;
+    text-align: justify;
+}
+
+.container__bloco1__texto {
+    font-size: 24px;
+    text-align: justify;
+
+}
+
+
+.container__bloco1__botoes {
+    display: flex;
+    justify-content: space-between;
+    padding: 0% 8%;
+}
+
+.container__bloco1__botoes__links {
+    background-color: rgb(253, 194, 0);
+    color: #000000;
+    font-size: 20px;
+    font-weight: 600; /*Altera o peso da fonte, deixando ela em negrito, mais grossa*/
+    width: 240px;
+    text-align: center;
+    border-radius: 8px;
+    padding: 8px 0px; /* Vertical   Horizontal*/
+    text-decoration: none; /* remove o sublinhado da ancora*/
+}
+
+
+.container__bloco2 {
+    background-color: #000000;
+}
+
 
 strong {
-    color: aquamarine;
+    color: rgb(78, 91, 188);
 }
 
-a {
-    background-color: aquamarine;
+
+#tecnologias {
+    color: #f8e300;
+}
+
+
+.outras-tecnologias {
+    color: #4d5bbc;
 }
