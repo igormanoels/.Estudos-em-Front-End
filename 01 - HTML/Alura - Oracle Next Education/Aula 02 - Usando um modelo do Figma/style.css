@@ -50,12 +50,15 @@ body {
 
 .container__bloco1__botoes {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: space-between;
     padding: 0% 8%;
+    gap: 16px;
 }
 
 .container__bloco1__botoes__links {
-    background-color: rgb(253, 194, 0);
+    background: rgb(253, 194, 0);
     color: #000000;
     font-size: 20px;
     font-weight: 600; /*Altera o peso da fonte, deixando ela em negrito, mais grossa*/
@@ -66,6 +69,10 @@ body {
     text-decoration: none; /* remove o sublinhado da ancora*/
 }
 
+.container__bloco1__botoes__links:hover {
+    background-color: #4d5bbc;
+    color: #F6F6F6;
+}
 
 .container__bloco2 {
     background-color: #000000;
