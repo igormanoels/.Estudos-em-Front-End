@@ -5,20 +5,43 @@
 
 
 body {
-    height: 100vh;/*Garante que a página será ocupada em 100% do viewport height*/
+    height: 100%;/*Garante que a página será ocupada em 100% do viewport height*/
     
     box-sizing: border-box;
     /*Garante que o conteúdo permanecerá dentro do corpo da página, encolhendo o conteúdo e se adaptando a outros tipos de tela*/
 
     display: flex;
     flex-direction: column;
+    min-height: auto;
     align-items: center;
     justify-content: center;
-    
+    overflow-x: hidden; /* Oculta a barra de rolagem horizontal */
 
     background-color: #000000;
     color: #F6F6F6;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.cabecalho {
+    display: flex;
+    padding: 24px 16px;
+    margin-bottom: 5%;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 40px;
+}
+
+.cabecalho__menu__link {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    color: #f8e300;
+    text-decoration: none; /* remove o sublinhado da ancora*/
+}
+
+.cabecalho__menu__link:hover{
+    color: #4d5bbc;
 }
 
 .container {
@@ -41,6 +64,12 @@ body {
     text-align: justify;
 }
 
+.container__bloco1__subtitulo {
+    font-family: 'Krona One', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+}
+
 .container__bloco1__texto {
     font-size: 24px;
     text-align: justify;
@@ -58,20 +87,26 @@ body {
 }
 
 .container__bloco1__botoes__links {
-    background: rgb(253, 194, 0);
-    color: #000000;
+    /* background: rgb(253, 194, 0);  usar comando ctrl+k+c*/
+    /* color: #000000; */
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    color: #f8e300;
     font-size: 20px;
     font-weight: 600; /*Altera o peso da fonte, deixando ela em negrito, mais grossa*/
-    width: 240px;
+    width: 360px;
     text-align: center;
     border-radius: 8px;
     padding: 8px 0px; /* Vertical   Horizontal*/
     text-decoration: none; /* remove o sublinhado da ancora*/
+    border: 2px solid #f8e300;
 }
 
 .container__bloco1__botoes__links:hover {
     background-color: #4d5bbc;
     color: #F6F6F6;
+    border: 2px solid #F6F6F6;
 }
 
 .container__bloco2 {
@@ -91,4 +126,17 @@ strong {
 
 .outras-tecnologias {
     color: #4d5bbc;
+}
+
+.rodape {
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo do rodapé */
+    align-items: center;
+    width: 100%; /* Garante que o rodapé ocupe toda a largura da tela */
+    background-color: #4d5bbc;
+    padding: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    margin-top:10%;
 }
