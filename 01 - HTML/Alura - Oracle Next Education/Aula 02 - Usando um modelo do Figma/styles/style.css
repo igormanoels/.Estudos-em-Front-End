@@ -1,8 +1,18 @@
+/* Permite criar variáveis que irão conter valores para serem reutilizados no código. O mesmo vale para as fontes.*/
+:root {
+    --cor-preto: #000000;
+    --cor-branco: #F6F6F6;
+    --cor-roxo: #4d5bbc;
+    --cor-amarelo1: #f8e300;
+    --cor-amarelo2: rgb(253, 194, 0);;
+}
+
+
+/*Reset CSS - Utilizado para remover as margens aplicadas nativamente nos elementos pelos navegadores*/
 * {
     margin: 0;
     padding: 0;
-} /*Reset CSS - Utilizado para remover as margens aplicadas nativamente nos elementos pelos navegadores*/
-
+} 
 
 body {
     height: 100%;/*Garante que a página será ocupada em 100% do viewport height*/
@@ -17,8 +27,9 @@ body {
     justify-content: center;
     overflow-x: hidden; /* Oculta a barra de rolagem horizontal */
 
-    background-color: #000000;
-    color: #F6F6F6;
+
+    background-color: var(--cor-preto);
+    color: var(--cor-branco);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
