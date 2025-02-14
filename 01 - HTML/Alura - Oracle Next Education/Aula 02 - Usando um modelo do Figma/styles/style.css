@@ -71,18 +71,18 @@ body {
 
 .container__bloco1__titulo {
     color: rgb(253, 194, 0);
-    font-size: 36px;
+    font-size: 2.25rem; /* Convertendo px em rem, basta dividir 36/16 = 2.25rem*/
     text-align: justify;
 }
 
 .container__bloco1__subtitulo {
     font-family: 'Krona One', sans-serif;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 24px; /* 24/16 = 1.5rem*/
 }
 
 .container__bloco1__texto {
-    font-size: 24px;
+    font-size: 24px; /* 24/16 = 1.5rem*/
     text-align: justify;
 
 }
@@ -104,7 +104,7 @@ body {
     justify-content: center;
     gap: 16px;
     color: #f8e300;
-    font-size: 20px;
+    font-size: 20px; /* 20/16 = 1.25rem*/
     font-weight: 600; /*Altera o peso da fonte, deixando ela em negrito, mais grossa*/
     width: 360px;
     text-align: center;
@@ -139,6 +139,10 @@ strong {
     color: #4d5bbc;
 }
 
+.container_img {
+    width: 50%;;
+}
+
 .rodape {
     display: flex;
     justify-content: center; /* Centraliza o conteúdo do rodapé */
@@ -150,4 +154,6 @@ strong {
     font-size: 16px;
     font-weight: 300;
     margin-top:10%;
+    position: absolute;
+    bottom: 0%;
 }
