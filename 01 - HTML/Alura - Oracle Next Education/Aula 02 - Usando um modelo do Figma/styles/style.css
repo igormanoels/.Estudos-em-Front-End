@@ -94,7 +94,7 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 0% 8%;
-    gap: 16px;
+    gap: 16px; /* Garante o espaço entre os elementos*/
 }
 
 .container__bloco1__botoes__links {
@@ -139,9 +139,10 @@ strong {
     color: #4d5bbc;
 }
 
+/*
 .container_img {
-    width: 50%;;
-}
+    width: 50%;
+} */
 
 .rodape {
     display: flex;
@@ -156,4 +157,29 @@ strong {
     margin-top:10%;
     position: absolute;
     bottom: 0%;
+}
+
+/* Faz com que obedecendo um critério, altere as propriedades da tela */
+@media (max-width: 1380px) {
+
+    .cabecalho {
+        padding: 10% 0% 0% 0%; 
+    }
+
+    .cabecalho__menu {
+        justify-content: center;
+    }
+
+    .container {
+        flex-direction: column-reverse;
+        padding: 5% 5%; /* Top/button e left/rigth */
+    }
+
+    .container__bloco1 {
+        width: auto;
+    }
+
+    .rodape {
+        margin-bottom: 0%;
+    }
 }
