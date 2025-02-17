@@ -14,6 +14,9 @@
         - [Jogo do Número Secreto](https://github.com/igormanoels/.Estudos-em-Front-End/tree/main/03%20-%20JavaScript/Alura%20-%20Oracle%20Next%20Education/Aula%2005%20-%20Manipulando%20o%20HTML%20com%20JS)
         - [Challenge amigo secreto](https://github.com/igormanoels/.Estudos-em-Front-End/tree/main/03%20-%20JavaScript/Alura%20-%20Oracle%20Next%20Education/Desafio%2003%20-%20Challenge%20amigo%20secreto)
     - DIO - Formação JavaScript Developer
+        - [Consolide Seu Conhecimento com Desafios de Código JavaScript]() - Em desenvolvimento 
+        - [Construindo uma Pokédex com JavaScript]() - Em desenvolvimento
+        - [Criando e Estilizando uma Página de Portfólio Profissional com CSS e JavaScript]() - Em desenvolvimento
     - Curso em Vídeo (Canal Youtube - Gustavo Guanabara)
 
 - ### *Estudos em Angular* 
