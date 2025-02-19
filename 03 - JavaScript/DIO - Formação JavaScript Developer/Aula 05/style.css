@@ -1,0 +1,68 @@
+/* Padrão da página */
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    --verde: #1ac9a8;
+    --verde-escuro: #006956;
+    --vermelho: #fd6165;
+    --vermelhor-escuro: #910005;
+    --azul: #5ca8ee;
+    --azul-escuro: #003669;
+    --amarelo: #ffd272;
+    --amarelo-escuro: #ad7600;
+    --branco: #f1f1f1;
+}
+
+.content {
+    padding: 1rem;
+}
+
+.content h1 {
+    margin: 0;
+}
+
+.pokemons {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Ocupa 1 frame do grid */
+}
+
+.pokemons li {
+    display: flex;
+    flex-direction: column;
+
+    margin: .5rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    color: var(--branco);
+    
+}
+
+.planta {
+    background-color: var(--verde);
+}
+
+.pokemons .planta .number{
+    color: #006956;
+    text-align: right;
+}
+
+.fogo {
+    background-color: var(--vermelho);
+}
+
+.agua {
+    background-color: var(--azul);
+}
+
+.eletrico {
+    background-color: var(--amarelo);
+}
+
+.pokemons li img {
+    max-width: 100px;
+    height: 100px;
+}
