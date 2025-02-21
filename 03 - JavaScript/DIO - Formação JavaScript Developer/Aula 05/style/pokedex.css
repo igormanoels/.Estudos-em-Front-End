@@ -1,0 +1,149 @@
+.pokemons {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* Ocupa 1 frame do grid */
+}
+
+.pokemons li {
+    display: flex;
+    flex-direction: column;
+
+    margin: .5rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    color: var(--branco);
+
+}
+
+.pokemons .detail {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pokemons .detail .types {
+    padding: 0%;
+    margin: 0%;
+    list-style: none;
+}
+
+.pokemons .detail .types .type {
+    color: var(--verde-escuro);
+    padding: .2rem;
+    font-size: .825rem;
+    margin: .25rem 0rem;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+
+/* CONFIGURAÇÃO PARA OS TIPO PLANTA */
+.planta {
+    background-color: var(--verde);
+}
+
+.pokemons .planta .name {
+    font-size: large;
+}
+
+.pokemons .planta .number {
+    color: var(--verde-escuro);
+    text-align: right;
+    font: 800;
+    font-size: large;
+}
+
+.pokemons .planta .detail .types .type {
+    background-color: var(--verde-claro);
+}
+
+
+/* CONFIGURAÇÃO PARA OS TIPO FOGO */
+.pokemons .fogo .number {
+    color: var(--vermelhor-escuro);
+    text-align: right;
+}
+
+.fogo {
+    background-color: var(--vermelho);
+}
+
+.pokemons .fogo .detail .types .type {
+    background-color: var(--vermelho-claro);
+}
+
+
+/* CONFIGURAÇÃO PARA OS TIPO ÁGUA */
+.pokemons .agua .number {
+    color: var(--azul-escuro);
+    text-align: right;
+}
+
+.agua {
+    background-color: var(--azul);
+}
+
+.pokemons .agua .detail .types .type {
+    background-color: var(--azul-claro);
+}
+
+
+
+/* CONFIGURAÇÃO PARA OS TIPO ELÉTRICO */
+.pokemons .eletrico .number {
+    color: var(--amarelo-escuro);
+    text-align: right;
+}
+
+.eletrico {
+    background-color: var(--amarelo);
+}
+
+.pokemons .eletrico .detail .types .type {
+    background-color: var(--amarelo-claro);
+}
+
+
+
+
+
+.pokemons li img {
+    max-width: 100px;
+    height: 100px;
+}
+
+
+@media screen and (min-width: 320px) {
+    .pokemons {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (min-width: 425px) {
+    .pokemons {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .pokemons {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .pokemons {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .pokemons {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+}
