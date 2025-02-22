@@ -2,18 +2,81 @@
 * {
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
-    --verde-claro: #61e1ca;
+
+    --verde2--claro: #d4fab1;
+    --verde2: #a7d081;
+    --verde2--escuro: #7e9d61;
+    
+
+    --verde--claro: #61e1ca;
     --verde: #1ac9a8;
-    --verde-escuro: #006956;
-    --vermelho-claro: #f59a9d ;
+    --verde--escuro: #006956;
+    
+
+    --vermelho--claro: #f59a9d ;
     --vermelho: #fd6165;
-    --vermelhor-escuro: #910005;
-    --azul-claro: #9dd0ff;
+    --vermelho--escuro: #910005;
+    
+
+    --azul--claro: #9dd0ff;
     --azul: #5ca8ee;
-    --azul-escuro: #003669;
-    --amarelo-claro: #ffeabe;
+    --azul--escuro: #003669;
+
+
+    --azul2--claro: #638094;
+    --azul2: #335a75;
+    --azul2--escuro: #0e324c;
+
+    
+    --amarelo--claro: #ffeabe;
     --amarelo: #ffd272;
-    --amarelo-escuro: #ad7600;
+    --amarelo--escuro: #ad7600;
+    
+
+    --normal: #f7eede;
+    --normal--escuro: #d18200;
+
+
+    --roxo--claro: #b9a7f8;
+    --roxo: #9b83d8;
+    --roxo--escuro: #201c2e;
+
+
+    --roxo2--claro: #cfc2d4;
+    --roxo2: #9b7fa6;
+    --roxo2--escuro: #52345e;
+
+
+    --marrom--claro: #bb9455;
+    --marrom: #865b15;
+    --marrom--escuro: #392709;
+
+
+    --rosa--claro: #ebb6bc;
+    --rosa: #f09ba5;
+    --rosa--escuro: #dd6c79;
+
+
+    --marrom2--claro: #d1be99;
+    --marrom2: #bfa56f;
+    --marrom2--escuro: #7a653a;
+
+
+    --cinza2--claro: #c8c7ce;
+    --cinza2: #908e96;
+    --cinza2--escuro: #6c6c6d;
+
+
+    --gelo--claro: #afd4e4;
+    --gelo: #82adc0;
+    --gelo--escuro: #55899f;
+
+
+    --bege--claro: #dddac8;
+    --bege: #ada675;    
+    --bege--escuro: #86836e;
+
+
     --branco: #f1f1f1;
     --cinza: #f5f7fb;
 }
@@ -47,6 +110,15 @@
         height: auto;
         border-radius: 1rem;
     } 
+}
+
+@media screen and (min-width: 1440px) {
+    .content {
+        max-width: 1440;
+        margin: 0 auto;
+        height: 120vh;
+        border-radius: 1rem;
+    }
 }
 
 

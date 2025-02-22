@@ -41,74 +41,263 @@
     text-align: center;
 }
 
-
-/* CONFIGURAÇÃO PARA OS TIPO PLANTA */
-.planta {
-    background-color: var(--verde);
-}
-
-.pokemons .planta .name {
+.pokemons .name {
     font-size: large;
 }
 
-.pokemons .planta .number {
-    color: var(--verde-escuro);
+
+/* CONFIGURAÇÃO PARA OS TIPO grass */
+.grass {
+    background-color: var(--verde);
+}
+
+.pokemons .grass .number {
+    color: var(--verde--escuro);
     text-align: right;
     font: 800;
     font-size: large;
 }
 
-.pokemons .planta .detail .types .type {
-    background-color: var(--verde-claro);
+.pokemons .grass .detail .types .type {
+    background-color: var(--verde--claro);
+    color: var(--verde--escuro);
 }
 
 
-/* CONFIGURAÇÃO PARA OS TIPO FOGO */
-.pokemons .fogo .number {
-    color: var(--vermelhor-escuro);
+/* CONFIGURAÇÃO PARA OS TIPO fire */
+.pokemons .fire .number {
+    color: var(--vermelho--escuro);
     text-align: right;
 }
 
-.fogo {
+.fire {
     background-color: var(--vermelho);
 }
 
-.pokemons .fogo .detail .types .type {
-    background-color: var(--vermelho-claro);
+.pokemons .fire .detail .types .type {
+    background-color: var(--vermelho--claro);
+    color: var(--vermelho--escuro);
 }
 
 
 /* CONFIGURAÇÃO PARA OS TIPO ÁGUA */
-.pokemons .agua .number {
-    color: var(--azul-escuro);
+.pokemons .water .number {
+    color: var(--azul--escuro);
     text-align: right;
 }
 
-.agua {
+.water {
     background-color: var(--azul);
 }
 
-.pokemons .agua .detail .types .type {
-    background-color: var(--azul-claro);
+.pokemons .water .detail .types .type {
+    background-color: var(--azul--claro);
+    color: var(--azul--escuro);
 }
 
 
 
 /* CONFIGURAÇÃO PARA OS TIPO ELÉTRICO */
-.pokemons .eletrico .number {
-    color: var(--amarelo-escuro);
+.pokemons .electric .number {
+    color: var(--amarelo--escuro);
     text-align: right;
 }
 
-.eletrico {
+.electric {
     background-color: var(--amarelo);
 }
 
-.pokemons .eletrico .detail .types .type {
-    background-color: var(--amarelo-claro);
+.pokemons .electric .detail .types .type {
+    background-color: var(--amarelo--claro);
+    color: var(--amarelo--escuro);
 }
 
 
+
+/* CONFIGURAÇÃO PARA OS TIPO NORMAL */
+.pokemons .normal .number {
+    color: var(--normal);
+    text-align: right;
+}
+
+.normal {
+    background-color: var(--normal--escuro);
+}
+
+.pokemons .normal .detail .types .type {
+    background-color: var(--normal);
+    color: var(--marrom--escuro);
+}
+
+
+
+/* CONFIGURAÇÃO PARA OS TIPO VENENOSO */
+.pokemons .poison .number {
+    color: var(--roxo--escuro);
+    text-align: right;
+}
+
+.poison {
+    background-color: var(--roxo);
+}
+
+.pokemons .poison .detail .types .type {
+    background-color: var(--roxo--claro);
+    color: var(--roxo--escuro);
+}
+
+
+
+/* CONFIGURAÇÃO PARA OS TIPO INSETO */
+.pokemons .bug .number {
+    color: var(--verde2--escuro);
+    text-align: right;
+}
+
+.bug {
+    background-color: var(--verde2);
+}
+
+.pokemons .bug .detail .types .type {
+    background-color: var(--verde2--claro);
+    color: var(--verde2--escuro);
+}
+
+
+
+/* CONFIGURAÇÃO PARA OS TIPO SOLO */
+.pokemons .ground .number {
+    color: var(--marrom--claro);
+    text-align: right;
+}
+
+.ground {
+    background-color: var(--marrom);
+}
+
+.pokemons .ground .detail .types .type {
+    background-color: var(--marrom--claro);
+    color: var(--marrom--escuro);
+}
+
+
+
+/* CONFIGURAÇÃO PARA OS TIPO FADA */
+.pokemons .fairy .number {
+    color: var(--rosa--claro);
+    text-align: right;
+}
+
+.fairy {
+    background-color: var(--rosa);
+}
+
+.pokemons .fairy .detail .types .type {
+    background-color: var(--rosa--claro);
+    color: var(--rosa--escuro);
+}
+
+
+
+/* CONFIGURAÇÃO PARA OS TIPO LUTA */
+.pokemons .fighting .number {
+    color: var(--marrom2--escuro);
+    text-align: right;
+}
+
+.fighting {
+    background-color: var(--marrom2);
+}
+
+.pokemons .fighting .detail .types .type {
+    background-color: var(--marrom2--claro);
+    color: var(--marrom2--escuro);
+}
+
+
+
+/* CONFIGURAÇÃO PARA OS TIPO PEDRA */
+.pokemons .rock .number {
+    color: var(--cinza2--claro);
+    text-align: right;
+}
+
+.rock {
+    background-color: var(--cinza2);
+}
+
+.pokemons .rock .detail .types .type {
+    background-color: var(--cinza2--claro);
+    color: var(--cinza2--escuro);
+}
+
+
+
+/* CONFIGURAÇÃO PARA OS TIPO GELO */
+.pokemons .ice .number {
+    color: var(--gelo--escuro);
+    text-align: right;
+}
+
+.ice {
+    background-color: var(--gelo);
+}
+
+.pokemons .ice .detail .types .type {
+    background-color: var(--gelo--claro);
+    color: var(--gelo--escuro);
+}
+
+
+
+/* CONFIGURAÇÃO PARA OS TIPO FANTASMA */
+.pokemons .ghost .number {
+    color: var(--azul2--claro);
+    text-align: right;
+}
+
+.ghost {
+    background-color: var(--azul2);
+}
+
+.pokemons .ghost .detail .types .type {
+    background-color: var(--azul2--claro);
+    color: var(--azul2--escuro);
+}
+
+
+
+/* CONFIGURAÇÃO PARA OS TIPO PSIQUICO */
+.pokemons .psychic .number {
+    color: var(--roxo2--claro);
+    text-align: right;
+}
+
+.psychic {
+    background-color: var(--roxo2);
+}
+
+.pokemons .psychic .detail .types .type {
+    background-color: var(--roxo2--claro);
+    color: var(--roxo2--escuro);
+}
+
+
+
+/* CONFIGURAÇÃO PARA OS TIPO DRAGÃO */
+.pokemons .dragon .number {
+    color: var(--bege--escuro);
+    text-align: right;
+}
+
+.dragon {
+    background-color: var(--bege);
+}
+
+.pokemons .dragon .detail .types .type {
+    background-color: var(--bege--claro);
+    color: var(--bege--escuro);
+}
 
 
 
