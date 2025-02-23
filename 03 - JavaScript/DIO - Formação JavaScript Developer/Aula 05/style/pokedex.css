@@ -399,6 +399,12 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
+
+    .formularioGen {
+        padding: 1rem;
+        position: absolute;
+        right: 2rem;
+    }
 }
 
 @media screen and (min-width: 992px) {
@@ -410,6 +416,12 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
+
+    .formularioGen {
+        padding: 1rem;
+        position: absolute;
+        right: 2rem;
+    }
 }
 
 @media screen and (min-width: 1440px) {
@@ -420,5 +432,11 @@
     .cabecalho {
         display: grid;
         grid-template-columns: 1fr 1fr;
+    }
+    
+    .formularioGen {
+        padding: 1rem;
+        position: absolute;
+        right: 2rem;
     }
 }

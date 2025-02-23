@@ -126,10 +126,11 @@
 
 }
 
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 768px) {
     .content {
-        max-width: 780px;
+        max-width: 768px;
         margin: 0 auto;
+        height: 100vh;
         height: auto;
         border-radius: 1rem;
     }
