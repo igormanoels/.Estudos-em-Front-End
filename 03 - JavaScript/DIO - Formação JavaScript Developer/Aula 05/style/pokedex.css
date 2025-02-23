@@ -301,6 +301,57 @@
 
 
 
+/* CONFIGURAÇÃO PARA OS TIPO ESCURIDÃO */
+.pokemons .dark .number {
+    color: var(--preto--escuro);
+    text-align: right;
+}
+
+.dark {
+    background-color: var(--preto);
+}
+
+.pokemons .dark .detail .types .type {
+    background-color: var(--preto--claro);
+    color: var(--preto--escuro);
+}
+
+
+
+/* CONFIGURAÇÃO PARA OS TIPO AÇO */
+.pokemons .steel .number {
+    color: var(--cinza2--escuro);
+    text-align: right;
+}
+
+.steel {
+    background-color: var(--cinza2--claro);
+}
+
+.pokemons .steel .detail .types .type {
+    background-color: var(--cinza2);
+    color: var(--cinza2--claro);
+}
+
+
+
+/* CONFIGURAÇÃO PARA OS TIPO NORMAL */
+.pokemons .flying .number {
+    color: var(--normal);
+    text-align: right;
+}
+
+.flying {
+    background-color: var(--normal--escuro);
+}
+
+.pokemons .flying .detail .types .type {
+    background-color: var(--normal);
+    color: var(--marrom--escuro);
+}
+
+
+
 .pokemons li img {
     max-width: 100px;
     height: 100px;
@@ -311,11 +362,31 @@
     .pokemons {
         grid-template-columns: 1fr;
     }
+
+    .cabecalho {
+        grid-template-columns: 1fr;
+    }
+
+    .formularioGen {
+        padding: 1rem;
+        position: relative;
+        right: auto;
+    }
 }
 
 @media screen and (min-width: 425px) {
     .pokemons {
         grid-template-columns: 1fr 1fr;
+    }
+
+    .cabecalho {
+        grid-template-columns: 1fr;
+    }
+
+    .formularioGen {
+        padding: 1rem;
+        position: relative;
+        right: auto;
     }
 }
 
@@ -323,16 +394,31 @@
     .pokemons {
         grid-template-columns: 1fr 1fr 1fr;
     }
+
+    .cabecalho {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 @media screen and (min-width: 992px) {
     .pokemons {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
+
+    .cabecalho {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 @media screen and (min-width: 1440px) {
     .pokemons {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .cabecalho {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 }

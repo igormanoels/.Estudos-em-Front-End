@@ -11,7 +11,7 @@ pokeApi.getPokemonsDetail = (pokemon) => {
 
 // Função do objeto, que faz o consumo da PokeAPI
 // Retorna um processamento assincrono, que é executado e onde se obterá a resposta em algum momento, ou seja um promise, uma hora, dando certo vc obtem um resultado
-pokeApi.getPokemons =  (offset = 0, limit = 151) => {
+pokeApi.getPokemons =  (offset, limit) => {
     const url = `https://pokeapi.co/api/v2/pokemon?offset=${offset}&limit=${limit}`;
 
     return fetch(url)

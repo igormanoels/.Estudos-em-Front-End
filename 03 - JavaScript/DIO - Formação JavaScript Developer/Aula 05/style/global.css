@@ -1,4 +1,4 @@
-/* Padrão da página */
+/* Padrão da página e variaveis de cores*/
 * {
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
@@ -77,21 +77,54 @@
     --bege--escuro: #86836e;
 
 
+    --preto--claro: #a0a3a5;
+    --preto: #485157;
+    --preto--escuro: #2e2e2e;
+
     --branco: #f1f1f1;
     --cinza: #f5f7fb;
 }
 
-.body {
-    background-color: var(--cinza);
-}
 
 .content {
     width: 100vw;
     height: 100vh;
     padding: 1rem;
-    background-color: #f5f7fb;
+    background-color: var(--cinza);
 }
 
+.cabecalho {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem;
+}
+
+
+.formularioGen {
+    padding: 1rem;
+    position: absolute;
+    right: 2rem;
+}
+
+@media screen and (min-width: 320px) {
+    .content {
+            max-width: 320px;
+            margin: 0 auto;
+            height: auto;
+            border-radius: 1rem;
+    }
+
+}
+
+@media screen and (min-width: 425px) {
+    .content {
+        max-width: 425px;
+        margin: 0 auto;
+        height: auto;
+        border-radius: 1rem;
+    }
+
+}
 
 @media screen and (min-width: 780px) {
     .content {
@@ -114,9 +147,9 @@
 
 @media screen and (min-width: 1440px) {
     .content {
-        max-width: 1440;
+        max-width: 1440px;
         margin: 0 auto;
-        height: 120vh;
+        height: auto;
         border-radius: 1rem;
     }
 }
